@@ -32,6 +32,7 @@
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   ArmPlatformLib|beryllium/Library/berylliumLib/berylliumLib.inf
 
+  CompilerIntrinsicsLib|ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib.inf
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
   UefiBootManagerLib|MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
   PlatformBootManagerLib|ArmPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
@@ -65,6 +66,8 @@
 
   # SimpleFbDxe
   FrameBufferBltLib|MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
+
+  SerialPortLib|beryllium/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
 
 [LibraryClasses.common.SEC]
   PrePiLib|EmbeddedPkg/Library/PrePiLib/PrePiLib.inf
@@ -133,9 +136,9 @@
   #
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
 
-  gberylliumTokenSpaceGuid.PcdMipiFrameBufferAddress|0x9d400000
+  gberylliumTokenSpaceGuid.PcdMipiFrameBufferAddress|0x9D499FC0
   gberylliumTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
-  gberylliumTokenSpaceGuid.PcdMipiFrameBufferHeight|2246
+  gberylliumTokenSpaceGuid.PcdMipiFrameBufferHeight|1920
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 
@@ -249,7 +252,7 @@
     <LibraryClasses>
       PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
   }
-  MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
+  #MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
   MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
   MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
   MdeModulePkg/Application/UiApp/UiApp.inf {

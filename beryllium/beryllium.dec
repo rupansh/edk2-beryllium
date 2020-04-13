@@ -37,3 +37,5 @@
   gberylliumTokenSpaceGuid.PcdMipiFrameBufferWidth|1080|UINT32|0x0000a401
   gberylliumTokenSpaceGuid.PcdMipiFrameBufferHeight|1920|UINT32|0x0000a402
   gberylliumTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32|UINT32|0x0000a403
+  gberylliumTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|1080|UINT32|0x0000a404
+  gberylliumTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|2234|UINT32|0x0000a405
