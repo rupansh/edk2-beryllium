@@ -209,10 +209,25 @@ READ_LOCK_STATUS   = TRUE
   # Bds
   #
   INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
-  #INF MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
   INF MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
   INF MdeModulePkg/Application/UiApp/UiApp.inf
+
+  #
+  # Binary Drivers from Poco F1
+  #
+
+  FILE DRIVER = 0d35cd8e-97ea-4f9a-96af-0f0d89f76567 {
+#    SECTION DXE_DEPEX = beryllium/Binary/UFSDxe/UFSDxe.depex
+    SECTION PE32 = beryllium/Binary/UFSDxe/UFSDxe.efi
+    SECTION UI = "UFSDxe"
+  }
+
+  FILE DRIVER = 2a7b4bef-80cd-49e1-b473-374ba4d673fc {
+    SECTION DXE_DEPEX = beryllium/Binary/SPMI/SPMI.depex
+    SECTION PE32 = beryllium/Binary/SPMI/SPMI.efi
+    SECTION UI = "SPMI"
+  }
 
 [FV.FVMAIN_COMPACT]
 FvAlignment        = 8
