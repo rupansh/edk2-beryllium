@@ -264,6 +264,7 @@
       NULL|MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
       PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
   }
+  beryllium/Drivers/LogoDxe/LogoDxe.inf
 
   ShellPkg/Application/Shell/Shell.inf {
     <LibraryClasses>
