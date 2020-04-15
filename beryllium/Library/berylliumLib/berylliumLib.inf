@@ -24,6 +24,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
+  beryllium/beryllium.dec
 
 [LibraryClasses]
   ArmLib
